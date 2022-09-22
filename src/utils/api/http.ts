@@ -3,7 +3,7 @@ import { ROUTES } from "@utils/routes";
 import axios from "axios";
 import Cookies from "js-cookie";
 import Router from "next/router";
-console.log('process.env.NEXT_PUBLIC_REST_API_ENDPOINT: ', process.env.NEXT_PUBLIC_REST_API_ENDPOINT);
+
 const http = axios.create({
   baseURL: process.env.NEXT_PUBLIC_REST_API_ENDPOINT, // TODO: take this api URL from env
   timeout: 30000,
